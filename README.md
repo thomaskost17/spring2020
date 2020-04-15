@@ -21,5 +21,6 @@ Breakdown of course assignments:
 - Homework 1
 
 ## ECE 101B
-
+Course on Electromagnetic Waves and Propogation. Homeworks, projects and all relevant files will be here.
+- Homework 2
 
