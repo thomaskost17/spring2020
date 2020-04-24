@@ -1,0 +1,19 @@
+For w0= 1.991962, w1 = -2.270484 , we had J(w) = 4.603635 
+For eta = 0.050000 : 83 itterations, J = 4.604498 
+For eta = 0.050000 : w0= 1.980168, w1 = -2.246815 
+For eta = 0.001000 : 2 itterations, J = 4.604406 
+For eta = 0.001000 : w0= 1.980181, w1 = -2.246841 
+For eta = 0.000100 : 3 itterations, J = 4.604404 
+For eta = 0.000100 : w0= 1.980182, w1 = -2.246843 
+For eta = 0.000010 : 4 itterations, J = 4.604404 
+For eta = 0.000010 : w0= 1.980182, w1 = -2.246844 
+For eta = 0.050000 : 0 itterations, J = 28.655524 
+For eta = 0.050000 : w0= 0.000000, w1 = 0.000000 
+For eta = 0.050000 : 10 itterations, J = 7.629320 
+For eta = 0.050000 : w0= 1.253005, w1 = -0.787455 
+For eta = 0.050000 : 20 itterations, J = 5.577512 
+For eta = 0.050000 : w0= 1.572725, w1 = -1.429108 
+For eta = 0.050000 : 30 itterations, J = 4.917096 
+For eta = 0.050000 : w0= 1.754114, w1 = -1.793141 
+For eta = 0.050000 : 40 itterations, J = 4.704529 
+For eta = 0.050000 : w0= 1.857022, w1 = -1.999670 
