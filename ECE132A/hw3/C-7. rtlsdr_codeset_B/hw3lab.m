@@ -41,4 +41,4 @@ fig5 = figure(5);
 plot(abs(ds(:,512)));
 saveas(fig5, 'lab_3_5.jpg');
 
-%sound(abs(dmdddd), 32000);
+sound(abs(dmdddd), 16000);
