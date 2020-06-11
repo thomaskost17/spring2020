@@ -1,0 +1,31 @@
+%% identify_message
+%  Author: Thomas Kost
+%  UID: 504989794
+%  Date: 6/4/20
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+function [indicies, messages] = identify_message(data)
+
+m = mean(abs(data));
+s = std(abs(data));
+threshold = abs(data)>(m+s);
+figure(2);
+threshold = conv(threshold,ones(100,1))==100;
+plot(threshold);
+d_threshold = circshift(threshold,1);
+x = d_threshold ~= threshold;
+figure(3);
+plot(x);
+index =[];
+for i  = 1:length(x)-1,
+    if(x(i) ~= x(i+1) &&( isempty(index)||(index(end) ~= i-1)))
+        index = [index, i]; %#ok<AGROW>
+    end
+    
+end
+indicies =reshape(index, 2,length(index)/2)';
+messages = size(indicies)[2];
+
+
+
+
+end

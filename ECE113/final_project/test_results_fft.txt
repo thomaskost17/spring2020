@@ -1,0 +1,10 @@
+File 1.wav was classified as A
+File 2.wav was classified as A
+File 3.wav was classified as BM
+File 4.wav was classified as C
+File 5.wav was classified as DM
+File 6.wav was classified as DM
+File 7.wav was classified as E
+File 8.wav was classified as E
+File 9.wav was classified as DM
+File 10.wav was classified as G
