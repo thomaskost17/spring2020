@@ -16,11 +16,12 @@ cl = ceil(eyed);
 z_fl =fl==0;
 z_cl = cl==0;
 x = sum(z_cl,2) +sum(z_fl,2);
+x= x-min(x);
 figure(3);
 plot(boff,x);
 figure(4);
 plot(boff,eyed);
 
 cross_pt = floor(x'*boff'/sum(x));%get average value
-offset = 10-abs(cross_pt);
+offset = 10-(cross_pt);
 end

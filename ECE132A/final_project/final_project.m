@@ -6,7 +6,7 @@
 clc, clear, close all;
 %% APRS RF Decoding
 
-data  = loadFile('aprs23.dat');
+data  = loadFile('aprs22.dat');
 dd    = decimate(decimate(data,8,'fir'),8,'fir');
 dd(1) = 0;
 plot(abs(dd));
@@ -16,8 +16,8 @@ plot(abs(dd));
 for k =1:m
     lower = boundaries(k,1);
     upper = boundaries(k,2);
-   % dp    = dd(lower:upper);
-    dp  = dd(3.8e5+(1:16900));
+    dp    = dd(lower:upper);
+    %dp  = dd(3.8e5+(1:16900));
     dp  = dp-sum(dp)/length(dp);
     dps = resample(dp,3,4);
     dpf = angle(conj(dps(1:end-1)).*dps(2:end));
@@ -34,7 +34,10 @@ figure(2);
 plot(ddif)
 
 offset = center_eye(ddif);
+%offset=10;
 bts = ddif((offset+1:20:end)-offset)>0;
+figure(11);
+plot(bts);
  n1 = 2000;
  n2 = n1 + 20*256 - 1;
 
